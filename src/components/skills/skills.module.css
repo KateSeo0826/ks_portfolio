@@ -1,0 +1,96 @@
+.progress {
+  height: 60px;
+}
+
+.skill {
+  color: var(--heading-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.val {
+  float: right;
+  font-style: normal;
+}
+
+.progressBarWrap {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 10px;
+}
+
+.progressBar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+}
+
+.htmlValue {
+  animation: htmlLoad 3s normal forwards;
+}
+
+@keyframes htmlLoad {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.cssValue {
+  animation: cssLoad 3s normal forwards;
+}
+
+@keyframes cssLoad {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.jsValue {
+  animation: jsLoad 3s normal forwards;
+}
+
+@keyframes jsLoad {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.reactValue,
+.wordValue {
+  animation: load 3s normal forwards;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.nodeValue {
+  animation: nodeLoad 3s normal forwards;
+}
+
+@keyframes nodeLoad {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}

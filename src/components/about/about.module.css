@@ -1,0 +1,30 @@
+.about {
+  font-family: var(--default-font);
+  min-height: 100vh;
+}
+
+.content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.content ul {
+  padding: 0;
+}
+
+.content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content ul strong {
+  margin-right: 10px;
+}
+
+.content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}

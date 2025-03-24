@@ -1,0 +1,140 @@
+.header {
+  color: var(--default-color);
+  background-color: var(--dark-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  width: 300px;
+  transition: all ease-in 0.3s;
+  overflow-y: auto;
+  z-index: 999;
+  border-right: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.profileImg img {
+  margin: 15px auto;
+  display: block;
+  width: 130px;
+  height: auto;
+  border: 8px solid
+    color-mix(in srgb, var(--dark-default-color), transparent 85%);
+}
+.logo {
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+.logo h1 {
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-default-color);
+}
+.social_links {
+  text-align: center;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+.social_links a {
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--dark-default-color), transparent 90%);
+  color: var(--dark-default-color);
+  margin: 0 2px;
+  border-radius: 50px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+.social_links a:hover {
+  color: (--dark-contrast-color);
+  background: var(--accent-color);
+}
+.headerToggle {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: background-color 0.3s;
+}
+.navMenu {
+  padding: 0;
+  z-index: 9997;
+}
+.navMenu ul {
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+.navMenu a,
+.navMenu a:focus {
+  text-decoration: none;
+  color: var(--nav-color);
+  padding: 12px 10px;
+  font-family: var(--nav-font);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.navMenu a .navIcon,
+.navMenu a:focus .navIcon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navMenu a:hover {
+  color: var(--nav-hover-color);
+}
+
+.navMenu a:hover .navIcon {
+  color: var(--accent-color);
+}
+
+@media (min-width: 1200px) {
+  .header ~ main,
+  .header ~ footer {
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header {
+    left: -100%;
+  }
+}
+
+.headerShow {
+  color: var(--default-color);
+  background-color: var(--dark-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  width: 300px;
+  transition: all ease-in 0.3s;
+  overflow-y: auto;
+  z-index: 999;
+  border-right: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+}
